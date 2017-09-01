@@ -4,7 +4,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 markdown: kramdown
 highlights: pygments
 url: 
-cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+cdn_url:
 lsi: false
 safe: true
 timezone: Asia/Shanghai
@@ -24,12 +24,12 @@ JB :
   IMAGE_PATH : http://coolshell.info/images
 
 # presonal config
-domain: http://coolshell.info
-title: Lippi-浮生志
+domain: http://ztzt123.cn
+title: zt's blog
 description: Draw my life with code
-author: Lippi.OuYang
-email: ouyanglip@gmail.com
-github: LippiOuYang
+author: Tony Zhang
+email: zhangtao21@maoyan.com
+github: zt000heart
 
 config:
   js_dir:
