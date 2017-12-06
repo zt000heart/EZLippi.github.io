@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eae4e64d-59e5-4b3b-ac2d-e55af54367f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/design/visitor.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-12-01-观察者模式，访问者模式.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-11-28-ARouter解析.md" afterPath="$PROJECT_DIR$/_posts/2017-11-28-ARouter解析.md" />
     </list>
     <ignored path="zt000heart.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,13 +27,13 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
-                <marker date="1511954640000" expanded="true" signature="58737:58779" ph="..." />
-                <marker date="1511954640000" expanded="true" signature="58737:58797" ph="..." />
-                <marker date="1511954640000" expanded="true" signature="58737:58810" ph="..." />
-                <marker date="1511954640000" expanded="true" signature="58737:58825" ph="..." />
+                <marker date="1512548614000" expanded="true" signature="59647:59689" ph="..." />
+                <marker date="1512548614000" expanded="true" signature="59647:59707" ph="..." />
+                <marker date="1512548614000" expanded="true" signature="59647:59720" ph="..." />
+                <marker date="1512548614000" expanded="true" signature="59647:59735" ph="..." />
               </folding>
             </state>
           </provider>
@@ -51,8 +52,18 @@
       <file leaf-file-name="2017-11-14-责任链模式，迭代器模式.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-14-责任链模式，迭代器模式.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="81">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-11-8-策略模式状态模式.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-11-8-策略模式状态模式.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2865">
+              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,31 +76,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-11-28-ARouter解析.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-11-28-ARouter解析.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-28-ARouter解析.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
+            <state relative-caret-position="2460">
               <caret line="164" column="22" lean-forward="false" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-03-24-编译时生成代码.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-03-24-编译时生成代码.md">
+      <file leaf-file-name="2017-12-01-观察者模式，访问者模式.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-12-01-观察者模式，访问者模式.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="540">
+              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-08-02-RecyclerView的滚动问题.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-08-02-RecyclerView的滚动问题.md">
+      <file leaf-file-name="absfactory.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/design/absfactory.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-03-24-编译时生成代码.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-03-24-编译时生成代码.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1095">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,20 +120,6 @@
               <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="link.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/design/link.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iterator.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/design/iterator.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -145,6 +149,7 @@
         <option value="$PROJECT_DIR$/_posts/2017-11-14-责任链模式，迭代器模式.md" />
         <option value="$PROJECT_DIR$/_posts/2017-03-24-编译时生成代码.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-28-ARouter解析.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-12-01-观察者模式，访问者模式，中介者模式.md" />
       </list>
     </option>
   </component>
@@ -169,6 +174,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -281,8 +288,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,9 +299,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img/gradle" />
-      <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/img/design" />
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$/img/gradle" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -379,7 +384,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511954813177" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512548650991" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -427,7 +432,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511954813177" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512548650991" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -709,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511953193877</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="blog">
+      <created>1511954817041</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1511954817041</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -783,22 +795,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
-            <marker date="1511954640000" expanded="true" signature="58737:58779" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58797" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58810" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58825" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59689" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59707" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59720" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59735" ph="..." />
           </folding>
         </state>
       </provider>
@@ -853,10 +858,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1511954640000" expanded="true" signature="58737:58779" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58797" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58810" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58825" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59689" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59707" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59720" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59735" ph="..." />
           </folding>
         </state>
       </provider>
@@ -906,10 +911,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1511954640000" expanded="true" signature="58737:58779" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58797" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58810" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58825" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59689" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59707" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59720" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59735" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1005,11 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/design/absfactory.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/design/builder.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1058,19 +1058,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-8-策略模式状态模式.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2865">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/design/observer.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/design/link.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1091,13 +1078,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
-            <marker date="1511954640000" expanded="true" signature="58737:58779" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58797" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58810" ph="..." />
-            <marker date="1511954640000" expanded="true" signature="58737:58825" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59689" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59707" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59720" ph="..." />
+            <marker date="1512548614000" expanded="true" signature="59647:59735" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1110,15 +1097,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-14-责任链模式，迭代器模式.md">
+    <entry file="file://$PROJECT_DIR$/img/gradle/arouter.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-03-24-编译时生成代码.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="1095">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/gradle/arouter.jpg">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-28-ARouter解析.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2460">
+          <caret line="164" column="22" lean-forward="false" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/design/observer.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1131,18 +1131,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-03-24-编译时生成代码.md">
+    <entry file="file://$PROJECT_DIR$/img/design/absfactory.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-14-责任链模式，迭代器模式.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="81">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-28-ARouter解析.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-8-策略模式状态模式.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="164" column="22" lean-forward="false" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
+        <state relative-caret-position="2865">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-12-01-观察者模式，访问者模式.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding />
         </state>
       </provider>
