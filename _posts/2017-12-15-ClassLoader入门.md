@@ -88,7 +88,7 @@ output = 生成的jar文件名 需要转换的jar
 
 使用Android device Monitor 向模拟器导入jar包，路径可以自选 只要你能读取的到
 
-我这里选用的是 Environment.getExternalStorageDirectory().getPath() 的路径下
+我这里选用的是 Environment.getExternalStorageDirectory().getPath() 的路径下： /storage/emulated/0
 
 ![s](/img/gradle/save.png)
 
