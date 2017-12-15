@@ -8,11 +8,48 @@ tags: [android]
 
 # ClassLoader简介
 
-# 双亲委派机制
+任何一个 Java 程序都是由若干个 class 文件组成的一个完整的 Java 程序，在程序运行时，需要将 class 文件加载到 JVM 中才可以使用，负责加载这些 class 文件的就是 Java 的类加载（ClassLoader）机制。
+ClassLoader 的作用简单来说就是加载 class 文件，提供给程序运行时使用。
+
+# 双亲委派模型
+
+ClassLoader通过传入父ClassLoader构造
+
+当前的 ClassLoader在加载Class的时候 先判断该类是否被加载过，加载过直接返回，如果没有加载交给父ClassLoader处理。
+父ClassLoader也先判断是否加载过，加载过直接返回，没加载过交给祖父ClassLoader处理 依次往上。
+如果都没有加载过。祖父ClassLoader尝试从其对应的类路径下寻找 class 字节码文件并载入。如果载入成功，则直接返回 Class，载入失败交给父ClassLoader处理。
+父ClassLoader尝试从其对应的类路径下寻找 class 字节码文件并载入。如果载入成功，则直接返回 Class，载入失败交给"当前"ClassLoader处理。
 
 # JVM中的ClassLoader
 
+ Bootstrap Loader  - 负责加载系统类
+ ExtClassLoader  - 负责加载扩展类
+ AppClassLoader  - 负责加载应用类
+
+        A a = new A();
+        System.out.println(a.getClass().getClassLoader());
+        System.out.println(a.getClass().getClassLoader().getParent());
+        System.out.println(a.getClass().getClassLoader().getParent().getParent());
+
+sun.misc.Launcher$AppClassLoader@18b4aac2   <br/>
+sun.misc.Launcher$ExtClassLoader@1540e19d   <br/>
+null   <br/>
+
+
+双亲委派机制的原因：
+
+
+
 # Android中的ClassLoader Dalvik/ART
+
+        Log.e("1"," "+MainActivity.class.getClassLoader());
+        Log.e("parent1"," "+MainActivity.class.getClassLoader().getParent());
+        Log.e("parent2"," "+MainActivity.class.getClassLoader().getParent().getParent());
+
+
+12-15 05:19:49.501 1870-1870/com.sankuai.moviepro.activitylife E/1:  dalvik.system.PathClassLoader   <br/>
+12-15 05:19:49.501 1870-1870/com.sankuai.moviepro.activitylife E/parent1:  java.lang.BootClassLoader@471b430   <br/>
+12-15 05:19:49.501 1870-1870/com.sankuai.moviepro.activitylife E/parent2:  null   <br/>
 
 ## PathClassLoader 与 DexClassLoader
 
@@ -92,7 +129,7 @@ output = 生成的jar文件名 需要转换的jar
 
 ![s](/img/gradle/save.png)
 
-## 5.使用
+## 5.使用DexClassLoader
 
 使用ISay 接口 需要现在项目中添加相同的接口类（类名包名需要相同）
 
