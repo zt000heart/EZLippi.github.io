@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “ClassLoader入门”
+title: “ClassLoader，类加载机制解析”
 description: “android”
 category: android
 tags: [android]
@@ -37,8 +37,6 @@ null   <br/>
 
 
 双亲委派机制的原因：
-
-
 
 # Android中的ClassLoader Dalvik/ART
 
