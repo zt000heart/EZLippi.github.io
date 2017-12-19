@@ -91,8 +91,8 @@
       <file leaf-file-name="2017-12-18- 原型模式，备忘录模式.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2017-12-18- 原型模式，备忘录模式.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="267" column="56" lean-forward="false" selection-start-line="267" selection-start-column="56" selection-end-line="267" selection-end-column="56" />
+            <state relative-caret-position="431">
+              <caret line="115" column="41" lean-forward="false" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -103,7 +103,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding />
+              <folding>
+                <marker date="1513675512000" expanded="true" signature="56082:56125" ph="..." />
+                <marker date="1513675512000" expanded="true" signature="56082:56143" ph="..." />
+                <marker date="1513675512000" expanded="true" signature="56082:56156" ph="..." />
+                <marker date="1513675512000" expanded="true" signature="56082:56171" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -348,7 +353,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513675512203" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513675541751" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -396,7 +401,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513675512203" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513675541751" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -713,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513595320411</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="blog">
+      <created>1513675517759</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1513675517759</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1108,14 +1120,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1513675512000" expanded="true" signature="56082:56125" ph="..." />
+            <marker date="1513675512000" expanded="true" signature="56082:56143" ph="..." />
+            <marker date="1513675512000" expanded="true" signature="56082:56156" ph="..." />
+            <marker date="1513675512000" expanded="true" signature="56082:56171" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-12-18- 原型模式，备忘录模式.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="267" column="56" lean-forward="false" selection-start-line="267" selection-start-column="56" selection-end-line="267" selection-end-column="56" />
+        <state relative-caret-position="431">
+          <caret line="115" column="41" lean-forward="false" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
           <folding />
         </state>
       </provider>
