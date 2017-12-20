@@ -22,12 +22,12 @@ ClassLoader通过传入父ClassLoader构造
 
 # JVM中的ClassLoader
 
- BootstrapClassLoader  - 负责加载系统类
- 负责来加载$JAVA_HOME/jre/lib下rt.jar，bootstrap classloader会负责加载java的关键类(java.lang包和其他的运行时类)到内存中。Bootstrap classloader是JVM中的实现
- ExtClassLoader  - 负责加载扩展类
- 加载lib/ext文件夹下的jar包
- AppClassLoader  - 负责加载应用类
- 用来加载ClassPath目录下的jar包和Class文件。
+ BootstrapClassLoader  - 负责加载系统类<br/>
+ 负责来加载$JAVA_HOME/jre/lib下rt.jar，bootstrap classloader会负责加载java的关键类(java.lang包和其他的运行时类)到内存中。Bootstrap classloader是JVM中的实现<br/>
+ ExtClassLoader  - 负责加载扩展类<br/>
+ 加载lib/ext文件夹下的jar包<br/>
+ AppClassLoader  - 负责加载应用类<br/>
+ 用来加载ClassPath目录下的jar包和Class文件。<br/>
 
         A a = new A();
         System.out.println(a.getClass().getClassLoader());
@@ -51,11 +51,11 @@ null   <br/>
 
 ## PathClassLoader和DexClassLoader
 
- PathClassLoader 和 DexClassLoader 继承自BaseDexClassLoader
- PathClassLoader 在应用启动时创建，从 data/app/… 安装目录下加载 apk 文件。
- 在 Android 中，App 安装到手机后，apk 里面的 class.dex 中的 class 均是通过 PathClassLoader 来加载的。
- BootClassLoader 是 PathClassLoader 的父加载器，其在系统启动时创建，在 App 启动时会将该对象传进来
- 和java虚拟机中不同的是BootClassLoader是ClassLoader内部类,由java代码实现而不是c++实现,是Android平台上所有ClassLoader的最终parent,这个内部类是包内可见,所以我们没法使用。
+ PathClassLoader 和 DexClassLoader 继承自BaseDexClassLoader  <br/>
+ PathClassLoader 在应用启动时创建，从 data/app/… 安装目录下加载 apk 文件。  <br/>
+ 在 Android 中，App 安装到手机后，apk 里面的 class.dex 中的 class 均是通过 PathClassLoader 来加载的。 <br/>
+ BootClassLoader 是 PathClassLoader 的父加载器，其在系统启动时创建，在 App 启动时会将该对象传进来  <br/>
+ 和java虚拟机中不同的是BootClassLoader是ClassLoader内部类,由java代码实现而不是c++实现,是Android平台上所有ClassLoader的最终parent,这个内部类是包内可见,所以我们没法使用。 <br/>
 
  对比PathClassLoader只能加载已经安装应用的dex或apk文件，DexClassLoader则没有此限制，可以从SD卡上加载包含class.dex的.jar和.apk 文件，这也是插件化和热修复的基础，在不需要安装应用的情况下，完成需要使用的dex的加载
 
@@ -94,8 +94,8 @@ null   <br/>
         66    }
         67}
 
- dexPath : 包含 dex 的 jar 文件或 apk 文件的路径集，多个以文件分隔符分隔，默认是“：”
- libraryPath : 包含 C/C++ 库的路径集，多个同样以文件分隔符分隔，可以为空
+ dexPath : 包含 dex 的 jar 文件或 apk 文件的路径集，多个以文件分隔符分隔，默认是“：”<br/>
+ libraryPath : 包含 C/C++ 库的路径集，多个同样以文件分隔符分隔，可以为空<br/>
 
           //DexClassLoader.java
          public class DexClassLoader extends BaseDexClassLoader {
@@ -156,7 +156,7 @@ null   <br/>
            330        return null;
            331    }
 
-DexClassLoader与PathClassLoader都是只有构造方法，唯一不同的是DexClassLoader 多一个参数optimized Directory优化路径，缓存优化后的缓存文件
+DexClassLoader与PathClassLoader都是只有构造方法，唯一不同的是DexClassLoader 多一个参数optimized Directory优化路径，缓存优化后的缓存文件<br/>
 
 # DexClassLoader加载Demo
 
