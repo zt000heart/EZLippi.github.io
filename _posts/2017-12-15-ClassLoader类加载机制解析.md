@@ -22,9 +22,12 @@ ClassLoader通过传入父ClassLoader构造
 
 # JVM中的ClassLoader
 
- Bootstrap Loader  - 负责加载系统类
+ BootstrapClassLoader  - 负责加载系统类
+ 负责来加载$JAVA_HOME/jre/lib下rt.jar，bootstrap classloader会负责加载java的关键类(java.lang包和其他的运行时类)到内存中。Bootstrap classloader是JVM中的实现
  ExtClassLoader  - 负责加载扩展类
+ 加载lib/ext文件夹下的jar包
  AppClassLoader  - 负责加载应用类
+ 用来加载ClassPath目录下的jar包和Class文件。
 
         A a = new A();
         System.out.println(a.getClass().getClassLoader());
@@ -34,9 +37,6 @@ ClassLoader通过传入父ClassLoader构造
 sun.misc.Launcher$AppClassLoader@18b4aac2   <br/>
 sun.misc.Launcher$ExtClassLoader@1540e19d   <br/>
 null   <br/>
-
-
-双亲委派机制的原因：
 
 # Android中的ClassLoader Dalvik/ART
 
@@ -49,11 +49,114 @@ null   <br/>
 12-15 05:19:49.501 1870-1870/com.sankuai.moviepro.activitylife E/parent1:  java.lang.BootClassLoader@471b430   <br/>
 12-15 05:19:49.501 1870-1870/com.sankuai.moviepro.activitylife E/parent2:  null   <br/>
 
-## PathClassLoader 与 DexClassLoader
+## PathClassLoader和DexClassLoader
 
-## BaseClassLoader解析
+ PathClassLoader 和 DexClassLoader 继承自BaseDexClassLoader
+ PathClassLoader 在应用启动时创建，从 data/app/… 安装目录下加载 apk 文件。
+ 在 Android 中，App 安装到手机后，apk 里面的 class.dex 中的 class 均是通过 PathClassLoader 来加载的。
+ BootClassLoader 是 PathClassLoader 的父加载器，其在系统启动时创建，在 App 启动时会将该对象传进来
+ 和java虚拟机中不同的是BootClassLoader是ClassLoader内部类,由java代码实现而不是c++实现,是Android平台上所有ClassLoader的最终parent,这个内部类是包内可见,所以我们没法使用。
 
-# 玩转ClassLoader
+ 对比PathClassLoader只能加载已经安装应用的dex或apk文件，DexClassLoader则没有此限制，可以从SD卡上加载包含class.dex的.jar和.apk 文件，这也是插件化和热修复的基础，在不需要安装应用的情况下，完成需要使用的dex的加载
+
+        //PathClassLoader.java
+        public class PathClassLoader extends BaseDexClassLoader {
+
+        37    public PathClassLoader(String dexPath, ClassLoader parent) {
+        38        super(dexPath, null, null, parent);
+        39    }
+        40
+        41    /**
+        42     * Creates a {@code PathClassLoader} that operates on two given
+        43     * lists of files and directories. The entries of the first list
+        44     * should be one of the following:
+        45     *
+        46     * <ul>
+        47     * <li>JAR/ZIP/APK files, possibly containing a "classes.dex" file as
+        48     * well as arbitrary resources.
+        49     * <li>Raw ".dex" files (not inside a zip file).
+        50     * </ul>
+        51     *
+        52     * The entries of the second list should be directories containing
+        53     * native library files.
+        54     *
+        55     * @param dexPath the list of jar/apk files containing classes and
+        56     * resources, delimited by {@code File.pathSeparator}, which
+        57     * defaults to {@code ":"} on Android
+        58     * @param libraryPath the list of directories containing native
+        59     * libraries, delimited by {@code File.pathSeparator}; may be
+        60     * {@code null}
+        61     * @param parent the parent class loader
+        62     */
+        63    public PathClassLoader(String dexPath, String libraryPath,
+        64            ClassLoader parent) {
+        65        super(dexPath, null, libraryPath, parent);
+        66    }
+        67}
+
+ dexPath : 包含 dex 的 jar 文件或 apk 文件的路径集，多个以文件分隔符分隔，默认是“：”
+ libraryPath : 包含 C/C++ 库的路径集，多个同样以文件分隔符分隔，可以为空
+
+          //DexClassLoader.java
+         public class DexClassLoader extends BaseDexClassLoader {
+         37    /**
+         38     * Creates a {@code DexClassLoader} that finds interpreted and native
+         39     * code.  Interpreted classes are found in a set of DEX files contained
+         40     * in Jar or APK files.
+         41     *
+         48     * @param optimizedDirectory directory where optimized dex files
+         49     *     should be written; must not be {@code null}
+         54     */
+         55    public DexClassLoader(String dexPath, String optimizedDirectory,
+         56            String libraryPath, ClassLoader parent) {
+         57        super(dexPath, new File(optimizedDirectory), libraryPath, parent);
+         58    }
+         59}
+
+          //BaseDexClassLoader.java
+         public class BaseDexClassLoader extends ClassLoader {
+         30    private final DexPathList pathList;
+         31
+         45    public BaseDexClassLoader(String dexPath, File optimizedDirectory,
+         46            String libraryPath, ClassLoader parent) {
+         47        super(parent);
+         48        this.pathList = new DexPathList(this, dexPath, libraryPath, optimizedDirectory);
+         49    }
+         50
+         51    @Override
+         52    protected Class<?> findClass(String name) throws ClassNotFoundException {
+         53        List<Throwable> suppressedExceptions = new ArrayList<Throwable>();
+         54        Class c = pathList.findClass(name, suppressedExceptions);
+         55        if (c == null) {
+         56            ClassNotFoundException cnfe = new ClassNotFoundException("Didn't find class \"" + name + "\" on path: " + pathList);
+         57            for (Throwable t : suppressedExceptions) {
+         58                cnfe.addSuppressed(t);
+         59            }
+         60            throw cnfe;
+         61        }
+         62        return c;
+         63    }
+           }
+
+               //DexPathList.java
+               public Class findClass(String name, List<Throwable> suppressed) {
+           317        for (Element element : dexElements) {
+           318            DexFile dex = element.dexFile;
+           319
+           320            if (dex != null) {
+           321                Class clazz = dex.loadClassBinaryName(name, definingContext, suppressed);
+           322                if (clazz != null) {
+           323                    return clazz;
+           324                }
+           325            }
+           326        }
+           327        if (dexElementsSuppressedExceptions != null) {
+           328            suppressed.addAll(Arrays.asList(dexElementsSuppressedExceptions));
+           329        }
+           330        return null;
+           331    }
+
+# DexClassLoader加载Demo
 
 ## 1.创建Project 建立Android Module
 
@@ -157,6 +260,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 DexClassLoader dexClassLoader = new DexClassLoader(jarFile.getAbsolutePath(), getExternalCacheDir().getAbsolutePath(), null, getClassLoader());
+                // PathClassLoader dexClassLoader = new PathClassLoader(jarFile.getAbsolutePath(), null, getClassLoader());
                 try {
                     Class clazz = dexClassLoader.loadClass("com.sankuai.moviepro.mylibrary.SayHello");
                     ISay say = (ISay) clazz.newInstance();
