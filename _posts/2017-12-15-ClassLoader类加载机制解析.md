@@ -156,6 +156,8 @@ null   <br/>
            330        return null;
            331    }
 
+DexClassLoader与PathClassLoader都是只有构造方法，唯一不同的是DexClassLoader 多一个参数optimized Directory优化路径，缓存优化后的缓存文件
+
 # DexClassLoader加载Demo
 
 ## 1.创建Project 建立Android Module
