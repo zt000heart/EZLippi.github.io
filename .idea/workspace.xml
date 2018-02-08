@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eae4e64d-59e5-4b3b-ac2d-e55af54367f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2018-02-05-桥接模式，享元模式.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2018-02-05-桥接模式，享元模式.md" afterPath="$PROJECT_DIR$/_posts/2018-02-05-桥接模式，享元模式.md" />
     </list>
     <ignored path="zt000heart.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="2018-01-28-外观模式，组合模式.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-01-28-外观模式，组合模式.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3000">
+            <state relative-caret-position="1915">
               <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
               <folding />
             </state>
@@ -66,8 +66,8 @@
       <file leaf-file-name="2018-02-05-桥接模式，享元模式.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-02-05-桥接模式，享元模式.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="153" column="43" lean-forward="true" selection-start-line="153" selection-start-column="43" selection-end-line="153" selection-end-column="43" />
+            <state relative-caret-position="815">
+              <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -103,13 +103,13 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
-                <marker date="1517997138000" expanded="true" signature="70113:70155" ph="..." />
-                <marker date="1517997138000" expanded="true" signature="70113:70173" ph="..." />
-                <marker date="1517997138000" expanded="true" signature="70113:70186" ph="..." />
-                <marker date="1517997138000" expanded="true" signature="70113:70201" ph="..." />
+                <marker date="1518062279000" expanded="true" signature="70296:70338" ph="..." />
+                <marker date="1518062279000" expanded="true" signature="70296:70356" ph="..." />
+                <marker date="1518062279000" expanded="true" signature="70296:70369" ph="..." />
+                <marker date="1518062279000" expanded="true" signature="70296:70384" ph="..." />
               </folding>
             </state>
           </provider>
@@ -405,7 +405,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517997478149" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518062327557" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -453,7 +453,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517997478149" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518062327557" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1009,7 +1009,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517478462787</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="blog">
+      <created>1517997483852</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1517997483852</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1379,13 +1386,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
-            <marker date="1517997138000" expanded="true" signature="70113:70155" ph="..." />
-            <marker date="1517997138000" expanded="true" signature="70113:70173" ph="..." />
-            <marker date="1517997138000" expanded="true" signature="70113:70186" ph="..." />
-            <marker date="1517997138000" expanded="true" signature="70113:70201" ph="..." />
+            <marker date="1518062279000" expanded="true" signature="70296:70338" ph="..." />
+            <marker date="1518062279000" expanded="true" signature="70296:70356" ph="..." />
+            <marker date="1518062279000" expanded="true" signature="70296:70369" ph="..." />
+            <marker date="1518062279000" expanded="true" signature="70296:70384" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1398,14 +1405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-01-28-外观模式，组合模式.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-8-策略模式状态模式.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-703">
@@ -1414,10 +1413,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-28-外观模式，组合模式.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1915">
+          <caret line="200" column="62" lean-forward="false" selection-start-line="200" selection-start-column="62" selection-end-line="200" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-02-05-桥接模式，享元模式.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="153" column="43" lean-forward="true" selection-start-line="153" selection-start-column="43" selection-end-line="153" selection-end-column="43" />
+        <state relative-caret-position="815">
+          <caret line="94" column="35" lean-forward="true" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
           <folding />
         </state>
       </provider>
